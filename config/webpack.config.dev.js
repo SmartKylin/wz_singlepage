@@ -92,7 +92,11 @@ module.exports = webpackMerge(baseConfig, {
     // for React Native Web.
     extensions: ['.web.js', '.js', '.json', '.web.jsx', '.jsx'],
     alias: {
-      
+      layout: path.resolve(__dirname, '../src/layout'),
+      component: path.resolve(__dirname, '../src/component'),
+      container: path.resolve(__dirname, '../src/container'),
+      services: path.resolve(__dirname, '../src/services/index.js'),
+      images: path.resolve(__dirname, '../src/images'),
       // Support React Native Web
       // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
       'react-native': 'react-native-web',
