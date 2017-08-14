@@ -1,0 +1,145 @@
+{
+  "path": "",
+  "delay": 500,
+  "name": "",
+  "description": "",
+  "isPaging": false,
+  "datasource": "success.data",
+  "responseName": "success",
+  "response": {
+    "success": {
+      "retcode": 2000000,
+      "msg": "获取数据成功",
+      "data": {
+        "clueCode": "CU21170619763051",
+        "cityId": 21,
+        "channelCode": "21",
+        "businessCode": "1497343287480340",
+        "status": 0,
+        "statusName": "面聊",
+        "serviceStatusName": "待收款",
+        "source": 1,
+        "declarationTime": "2017-06-19 19:31:34",
+        "probability": 100,
+        "about": "备注",
+        "users": {
+          "id": 12,
+          "clueCode": "CU21170619763051",
+          "name": "小强",
+          "phone": "18601901479",
+          "idCard": "12312asdasfasd",
+          "type": 0
+        },
+        "houses": {
+          "id": 12,
+          "clueCode": "CU21170619763051",
+          "city": 21,
+          "district": 21,
+          "address": "半山坡",
+          "assessedValue" : 120000
+        },
+        "expect": {
+          "id": 15,
+          "clueCode": "CU21170619763051",
+          "amount": 20000000,
+          "term": 12,
+          "emergency": 1,
+          "repaymentMethod": 0
+        },
+        "serviceInfo": {
+          "contractNo": "XXXXXXXXXXX",
+          "chargesAmount": 123,
+          "deposit": 12,
+          "serviceCharge": 1,
+          "about": "备注"
+        },
+        "loanInfos": [
+          {
+            "id": 7,
+            "clueCode": "CU21170619140369",
+            "createdBy": "王川平",
+            "createdTime": "2017-06-20 13:37:14",
+            "modifiedBy": "王川平",
+            "modifiedTime": "2017-06-21 08:41:24",
+            "name": "测试数据",
+            "bank": "招商银行",
+            "contractNo": "11",
+            "loanStatus": 40,
+            "loanStatusName": "已放款",
+            "loanAmount": 110000,
+            "loanRate": 11,
+            "loanTerm": 11,
+            "repaymentMethod": 2,
+            "contractStatus": 1,
+            "about": "1111111111"
+          },
+          {
+            "id": 8,
+            "clueCode": "CU21170619140369",
+            "createdBy": "王川平",
+            "createdTime": "2017-06-20 13:37:27",
+            "modifiedBy": "王川平",
+            "modifiedTime": "2017-06-21 08:41:24",
+            "name": "测试数据2",
+            "bank": "北京银行",
+            "contractNo": "22",
+            "loanStatus": 40,
+            "loanStatusName": "已放款",
+            "loanAmount": 2200000,
+            "loanRate": 22,
+            "loanTerm": 222,
+            "repaymentMethod": 1,
+            "contractStatus": 1,
+            "about": "2222"
+          }
+        ],
+        "channel":{
+          "channelCode": 21,
+          "name": "曹操",
+          "channelInstitutionName": "中原房产",
+          "mobile": 18623171659,
+          "address": "四惠大厦"
+        },
+        "backlog": [
+          {
+            "planTime": "2017-07-01 10:10",
+            "title": "预约面聊",
+            "isAccomplish": "2",
+            "id": 123,
+            "remark": "这里是长长长长长长长长长长长长长长长长长长长长的备注信息"
+          },
+          {
+            "planTime": "2017-07-02 10:10",
+            "title": "搞基搞基",
+            "isAccomplish": "0",
+            "id": 1234,
+            "remark": "这里是长长长长长长长长长长长长长长长长长长长长的备注信息"
+          },
+          {
+            "planTime": "2017-07-02 10:10",
+            "title": "挖鱼挖鱼",
+            "isAccomplish": "1",
+            "id": 1234,
+            "remark": "这里是长长长长长长长长长长长长长长长长长长长长的备注信息"
+          },
+          {
+            "id": "3",
+            "title": "待面签预约",
+            "type": "2",
+            "content": "内容",
+            "flag": "CU21170619140369",
+            "remark": "测试备注",
+            "staffCode": "666666",
+            "planTime": "2017-06-19 10:30",
+            "isRemind": "0",
+            "isAccomplish": "0"
+          }
+        ]
+      }
+    },
+    "failure": {
+      "retcode": 4000000,
+      "msg": "系统罢工啦~"
+    }
+  }
+}

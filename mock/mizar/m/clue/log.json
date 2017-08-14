@@ -1,0 +1,35 @@
+{
+  "path": "",
+  "delay": 500,
+  "name": "",
+  "description": "",
+  "isPaging": false,
+  "datasource": "success.data",
+  "responseName": "success",
+  "response": {
+    "success": {
+      "retcode": 2000000,
+      "msg": "获取数据成功",
+      "data": [
+        {
+            "createdBy":"小强",
+            "createdTime":"2017-06-19 14:55:48",
+            "type":0,
+            "typeName":"测试名称",
+            "message":"测试记录，测试记录，测试记录，测试记录测试记录，测试记录测试记录，测试记录测试记录，测试记录测试记录，测试记录测试记录，测试记录测试记录，测试记录测试记录，测试记录"
+        },
+        {
+            "createdBy":"小强",
+            "createdTime":"2017-06-19 14:55:48",
+            "type":1,
+            "typeName":"测试名称",
+            "message":"测试记录，测试记录，测试记录，测试记录测试记录，测试记录测试记录，测试记录测试记录，测试记录测试记录，测试记录测试记录，测试记录测试记录，测试记录测试记录，测试记录"
+        }
+      ]
+    },
+    "failure": {
+      "retcode": 4000000,
+      "msg": "系统罢工啦~"
+    }
+  }
+}

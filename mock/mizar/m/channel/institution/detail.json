@@ -1,0 +1,32 @@
+{
+  "path": "",
+  "delay": 500,
+  "name": "",
+  "description": "",
+  "isPaging": false,
+  "datasource": "success.data",
+  "responseName": "success",
+  "response": {
+    "success": {
+      "retcode": 2000000,
+      "msg": "成功",
+      "data": {
+        "id": "1",
+        "name": "链家地产",
+        "address": "北京市朝阳区四惠东大厦",
+        "industry": "1",
+        "status": "1",
+        "cityId": "1",
+        "areaId": "10",
+        "parentId": "1",
+        "staffCode": "666666",
+        "staffName": "",
+        "createdTime": "2017-06-15 19:19:21"
+      }
+    },
+    "failure": {
+      "retcode": "201",
+      "msg": "服务异常"
+    }
+  }
+}

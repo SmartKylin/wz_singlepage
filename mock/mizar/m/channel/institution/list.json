@@ -1,0 +1,38 @@
+{
+  "path": "",
+  "delay": 500,
+  "name": "",
+  "description": "",
+  "isPaging": false,
+  "datasource": "success.data",
+  "responseName": "success",
+  "response": {
+    "success": {
+      "retcode": 2000000,
+      "msg": "成功",
+      "data": {
+        "list": [
+          {
+            "id": "380",
+            "name": "麦田"
+          },
+          {
+            "id": "254",
+            "name": "链家地产"
+          },
+          {
+            "id": "12",
+            "name": "我爱我家"
+          }
+        ],
+        "count": 11,
+        "page": 1,
+        "size": 100
+      }
+    }
+  },
+  "failure": {
+    "retcode": "201",
+    "msg": "服务异常"
+  }
+}

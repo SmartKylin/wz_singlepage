@@ -1,0 +1,20 @@
+{
+  "path": "",
+  "delay": 500,
+  "name": "",
+  "description": "",
+  "isPaging": false,
+  "datasource": "success.data",
+  "responseName": "success",
+  "response": {
+    "success": {
+      "retcode": 2000000,
+      "msg": "添加拜访日志成功"
+    },
+    "failure": {
+      "retcode": "201",
+      "msg": "添加拜访日志是失败"
+    }
+  }
+}
+

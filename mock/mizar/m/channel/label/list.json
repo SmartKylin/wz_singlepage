@@ -1,0 +1,73 @@
+{
+  "path": "",
+  "delay": 500,
+  "name": "",
+  "description": "",
+  "isPaging": false,
+  "datasource": "success.data",
+  "responseName": "success",
+  "response": {
+    "success": {
+      "retcode": 2000000,
+      "msg": "成功",
+      "data": {
+        "1": {
+          "type": "关系标签",
+          "list": [
+            {
+              "id": "A",
+              "type": "关系标签",
+              "name": "A类",
+              "explain": "订单充足，合作意向强"
+            },
+            {
+              "id": "B1",
+              "type": "关系标签",
+              "name": "B1类",
+              "explain": "订单充足，有突破可能性"
+            },
+            {
+              "id": "B2",
+              "type": "关系标签",
+              "name": "B2类",
+              "explain": "订单充足，暂时无法突破"
+            },
+            {
+              "id": "C",
+              "type": "关系标签",
+              "name": "C类",
+              "explain": "订单有限，合作意向强"
+            },
+            {
+              "id": "D",
+              "type": "关系标签",
+              "name": "D类",
+              "explain": "订单有限，拒绝合作"
+            }
+          ]
+        },
+        "2": {
+          "type": "产能标签",
+          "list": [
+            {
+              "id": "5",
+              "type": "产能标签",
+              "name": "高产",
+              "explain": "高产能"
+            },
+            {
+              "id": "6",
+              "type": "产能标签",
+              "name": "底产",
+              "explain": "底产能"
+            }
+          ]
+        }
+      }
+    },
+    "failure": {
+      "retcode": "201",
+      "msg": "服务异常"
+    }
+  }
+}

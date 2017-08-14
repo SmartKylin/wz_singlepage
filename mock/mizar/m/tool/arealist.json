@@ -1,0 +1,133 @@
+{
+  "path": "",
+  "delay": 500,
+  "name": "",
+  "description": "",
+  "isPaging": false,
+  "datasource": "success.data",
+  "responseName": "success",
+  "response": {
+    "success": {
+      "retcode": 2000000,
+      "msg": "成功",
+      "data":[
+        {
+          "id":27,
+          "type":4,
+          "typeName":"区",
+          "name":"东城区",
+          "description":"这是东城区",
+          "parentId":21,
+          "cityId":21,
+          "cityName":"北京市",
+          "deleted":0,
+          "businessStatus":0,
+          "createdBy":"SYS",
+          "createdTime":"2017-06-08 12:13:05",
+          "modifiedBy":"yang",
+          "modifiedTime":"2017-06-16 09:19:08"
+        },
+        {
+          "id":28,
+          "type":4,
+          "typeName":"区",
+          "name":"西城区",
+          "description":"测试数据",
+          "parentId":21,
+          "cityId":21,
+          "cityName":"北京市",
+          "deleted":0,
+          "businessStatus":0,
+          "createdBy":"SYS",
+          "createdTime":"2017-06-08 12:14:59",
+          "modifiedBy":"杨伟康",
+          "modifiedTime":"2017-06-16 09:30:18"
+        },
+        {
+          "id":36,
+          "type":4,
+          "typeName":"区",
+          "name":"朝阳区",
+          "description":"测试数据",
+          "parentId":21,
+          "cityId":21,
+          "cityName":"北京市",
+          "deleted":0,
+          "businessStatus":0,
+          "createdBy":"杨伟康",
+          "createdTime":"2017-06-16 09:30:51",
+          "modifiedBy":"杨伟康",
+          "modifiedTime":"2017-06-16 09:30:51"
+        },
+        {
+          "id":37,
+          "type":4,
+          "typeName":"区",
+          "name":"海淀区",
+          "description":"测试数据",
+          "parentId":21,
+          "cityId":21,
+          "cityName":"北京市",
+          "deleted":0,
+          "businessStatus":0,
+          "createdBy":"杨伟康",
+          "createdTime":"2017-06-16 09:31:16",
+          "modifiedBy":"杨伟康",
+          "modifiedTime":"2017-06-16 09:31:16"
+        },
+        {
+          "id":38,
+          "type":4,
+          "typeName":"区",
+          "name":"丰台区",
+          "description":"测试数据",
+          "parentId":21,
+          "cityId":21,
+          "cityName":"北京市",
+          "deleted":0,
+          "businessStatus":0,
+          "createdBy":"杨伟康",
+          "createdTime":"2017-06-16 09:31:29",
+          "modifiedBy":"杨伟康",
+          "modifiedTime":"2017-06-16 09:31:29"
+        },
+        {
+          "id":39,
+          "type":4,
+          "typeName":"区",
+          "name":"大兴区",
+          "description":"测试数据",
+          "parentId":21,
+          "cityId":21,
+          "cityName":"北京市",
+          "deleted":0,
+          "businessStatus":0,
+          "createdBy":"杨伟康",
+          "createdTime":"2017-06-16 09:31:42",
+          "modifiedBy":"杨伟康",
+          "modifiedTime":"2017-06-16 09:31:42"
+        },
+        {
+          "id":40,
+          "type":4,
+          "typeName":"区",
+          "name":"望京区",
+          "description":"测试数据",
+          "parentId":21,
+          "cityId":21,
+          "cityName":"北京市",
+          "deleted":0,
+          "businessStatus":0,
+          "createdBy":"杨伟康",
+          "createdTime":"2017-06-16 09:32:00",
+          "modifiedBy":"杨伟康",
+          "modifiedTime":"2017-06-16 09:32:00"
+        }
+      ]
+    },
+    "failure": {
+      "retcode": "201",
+      "msg": "服务异常"
+    }
+  }
+}

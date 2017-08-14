@@ -1,0 +1,20 @@
+{
+  "path": "",
+  "delay": 500,
+  "name": "",
+  "description": "",
+  "isPaging": false,
+  "datasource": "success.data",
+  "responseName": "success",
+  "response": {
+    "success": {
+      "retcode": 2000000,
+      "msg": "获取数据成功",
+      "data": "...."
+    },
+    "failure": {
+      "retcode": 4000000,
+      "msg": "系统罢工啦~"
+    }
+  }
+}

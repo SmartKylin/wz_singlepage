@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import logo from './images/logo.svg';
+import logo from '../images/logo.svg';
 import './App.scss';
-import RouterMap from './router'
+import RouterMap from '../router'
 
 class App extends Component {
   render() {

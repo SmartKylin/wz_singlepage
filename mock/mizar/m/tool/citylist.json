@@ -1,0 +1,37 @@
+{
+  "path": "",
+  "delay": 500,
+  "name": "",
+  "description": "",
+  "isPaging": false,
+  "datasource": "success.data",
+  "responseName": "success",
+  "response": {
+    "success": {
+      "retcode": 2000000,
+      "msg": "成功",
+      "data":[
+        {
+          "id":21,
+          "name":"北京市"
+        },
+        {
+          "id":22,
+          "name":"上海市"
+        },
+        {
+          "id":23,
+          "name":"深圳市"
+        },
+        {
+          "id":24,
+          "name":"广州市"
+        }
+      ]
+    },
+    "failure": {
+      "retcode": "201",
+      "msg": "服务异常"
+    }
+  }
+}

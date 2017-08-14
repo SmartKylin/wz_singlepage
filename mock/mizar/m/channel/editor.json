@@ -1,0 +1,19 @@
+{
+  "path": "",
+  "delay": 500,
+  "name": "",
+  "description": "",
+  "isPaging": false,
+  "datasource": "success.data",
+  "responseName": "success",
+  "response": {
+    "success": {
+      "retcode": 2000000,
+      "msg": "修改触点成功"
+    },
+    "failure": {
+      "retcode": 4000000,
+      "msg": "修改触点失败~"
+    }
+  }
+}

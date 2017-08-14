@@ -1,0 +1,32 @@
+{
+  "path": "",
+  "delay": 500,
+  "name": "",
+  "description": "",
+  "isPaging": false,
+  "datasource": "success.data",
+  "responseName": "success",
+  "response": {
+    "success": {
+      "retcode": 2000000,
+      "msg": "成功",
+      "data": {
+        "id": "2",
+        "staff_code": "1497436838861401",
+        "title": "进行逼单，扩大战果",
+        "type": "1",
+        "content": "",
+        "flag": "20",
+        "plan_time": "2017-06-24 08:30:00",
+        "is_remind": "0",
+        "isAccomplish": "1",
+        "remark": "会计课",
+        "sketch": "触点：张三 （一级-A类-高产）"
+      }
+    },
+    "failure": {
+      "retcode": "201",
+      "msg": "服务异常"
+    }
+  }
+}

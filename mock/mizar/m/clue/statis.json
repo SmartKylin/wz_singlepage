@@ -1,0 +1,29 @@
+{
+  "path": "",
+  "delay": 500,
+  "name": "",
+  "description": "",
+  "isPaging": false,
+  "datasource": "success.data",
+  "responseName": "success",
+  "response": {
+    "success": {
+      "retcode": 2000000,
+      "msg": "成功",
+      "data":{
+        "all":20,
+        "waitSignedService":0,
+        "loan":0,
+        "waitApproval":0,
+        "success":0,
+        "waitEndOrder":0,
+        "waitLoan":0,
+        "waitFace":1
+      }
+    },
+    "failure": {
+      "retcode": "201",
+      "msg": "服务异常"
+    }
+  }
+}

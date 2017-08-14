@@ -1,0 +1,83 @@
+{
+  "path": "",
+  "delay": 500,
+  "name": "",
+  "description": "",
+  "isPaging": false,
+  "datasource": "success.data",
+  "responseName": "success",
+  "response": {
+    "success": {
+      "retcode": 2000000,
+      "msg": "成功",
+      "data":{
+        "list":[
+          {
+            "id":"1",
+            "title":"任务标题",
+            "type":"1",
+            "content":"任务内容",
+            "flag":"csMtg5k42hKKe",
+            "remark":"",
+            "typeName":"触点回访任务",
+            "isRemindName":"未提醒",
+            "isAccomplishName":"未完成",
+            "staffCode":"666666",
+            "planTime":"2017-06-19 10:30",
+            "isRemind":"0",
+            "isAccomplish": 0
+          },
+          {
+            "id":"3",
+            "title":"线索",
+            "type":"3",
+            "content":"线索任务",
+            "flag":"CU21170619763051",
+            "remark":"",
+            "typeName":"线索任务",
+            "isRemindName":"未提醒",
+            "isAccomplishName":"未完成",
+            "staffCode":"666666",
+            "planTime":"2017-06-19 10:30",
+            "isRemind":"0",
+            "isAccomplish": 1
+          },
+          {
+            "id":"2",
+            "title":"任务标题",
+            "type":"1",
+            "content":"任务内容",
+            "flag":"csMtg5k42hKKe",
+            "remark":"",
+            "typeName":"触点回访任务",
+            "isRemindName":"未提醒",
+            "isAccomplishName":"未完成",
+            "staffCode":"666666",
+            "planTime":"2017-06-19 10:30",
+            "isRemind":"0",
+            "isAccomplish": 2
+          },
+          {
+            "id":"4",
+            "title":"任务标题",
+            "type":"1",
+            "content":"任务内容",
+            "flag":"csMtg5k42hKKe",
+            "remark":"",
+            "typeName":"触点回访任务",
+            "isRemindName":"未提醒",
+            "isAccomplishName":"未完成",
+            "staffCode":"666666",
+            "planTime":"2017-06-19 10:30",
+            "isRemind":"0",
+            "isAccomplish": 0
+          }
+        ]
+      }
+    },
+    "failure": {
+      "retcode": "201",
+      "msg": "服务异常"
+    }
+  }
+}

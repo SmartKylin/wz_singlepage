@@ -1,0 +1,26 @@
+{
+  "path": "",
+  "delay": 500,
+  "name": "",
+  "description": "",
+  "isPaging": true,
+  "datasource": "success.data.list",
+  "responseName": "success",
+  "response": {
+    "success": {
+      "retcode": 2000000,
+      "msg": "获取数据成功",
+      "data": {
+        "pageNum": 0,
+        "pageSize": 0,
+        "total": 0,
+        "pages": 0,
+        "list": ["东城区", "西城区", "朝阳区", "丰台区", "石景山区", "门头沟区", "海淀区", "房山区", "通州曲", "顺义区", "昌平区", "大兴区", "怀柔区", "平谷区", "密云区", "延庆区"]
+      }
+    },
+    "failure": {
+      "retcode": 4000000,
+      "msg": "系统罢工啦~"
+    }
+  }
+}

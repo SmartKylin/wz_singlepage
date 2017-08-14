@@ -1,0 +1,33 @@
+{
+  "path": "",
+  "delay": 500,
+  "name": "",
+  "description": "",
+  "isPaging": false,
+  "datasource": "success.data",
+  "responseName": "success",
+  "response": {
+    "success": {
+      "retcode": 2000000,
+      "msg": "获取目标成功",
+      "data":{
+        "week":{
+          "aims":10,
+          "carryOutAims":4,
+          "remainDay":2,
+          "probability":40
+        },
+        "month":{
+          "aims":50,
+          "carryOutAims":19,
+          "remainDay":10,
+          "probability":38
+        }
+      }
+    },
+    "failure": {
+      "retcode": 4000000,
+      "msg": "获取目标失败~"
+    }
+  }
+}

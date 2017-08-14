@@ -1,0 +1,41 @@
+{
+  "path": "",
+  "delay": 500,
+  "name": "",
+  "description": "",
+  "isPaging": false,
+  "datasource": "success.data",
+  "responseName": "success",
+  "response": {
+    "success": {
+      "retcode": 2000000,
+      "msg": "成功",
+      "data": {
+        "total": {
+          "channel": 10,
+          "delivery_clue": 0,
+          "endorse_clue": 0,
+          "bargain_clue": 0
+        },
+        "synthesize": {
+          "ag1": 0,
+          "bg": 0,
+          "cg": 0,
+          "dormant": 0
+        },
+        "level": {
+          "one": 0,
+          "two": 0,
+          "three": 0,
+          "four": 0,
+          "five": 0,
+          "vip": 0
+        }
+      }
+    },
+    "failure": {
+      "retcode": "201",
+      "msg": "服务异常"
+    }
+  }
+}

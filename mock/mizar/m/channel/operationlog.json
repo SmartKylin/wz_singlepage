@@ -1,0 +1,61 @@
+{
+  "path": "",
+  "delay": 500,
+  "name": "",
+  "description": "",
+  "isPaging": false,
+  "datasource": "success.data",
+  "responseName": "success",
+  "response": {
+    "success": {
+      "retcode": 2000000,
+      "msg": "成功",
+      "data":[
+        {
+          "id":"1",
+          "channel_code":"csMtg5k42hKKe",
+          "oper_type":"1",
+          "source_level":"1",
+          "target_level":"2",
+          "remark":"这里是备注",
+          "oper":"牙",
+          "oper_time":"2017-06-18 14:27:47"
+        },
+        {
+          "id":"2",
+          "channel_code":"csMtg5k42hKKe",
+          "oper_type":"1",
+          "source_level":"1",
+          "target_level":"2",
+          "remark":"这里是备注",
+          "oper":"东方不败",
+          "oper_time":"2017-06-19 14:27:47"
+        } ,
+        {
+          "id":"3",
+          "channel_code":"csMtg5k42hKKe",
+          "oper_type":"1",
+          "source_level":"1",
+          "target_level":"2",
+          "remark":"这里是备注",
+          "oper":"令狐冲",
+          "oper_time":"2017-06-20 14:27:47"
+        },
+        {
+          "id":"4",
+          "channel_code":"csMtg5k42hKKe",
+          "oper_type":"1",
+          "source_level":"1",
+          "target_level":"2",
+          "remark":"这里是备注",
+          "oper":"做冷禅",
+          "oper_time":"2017-07-20 14:27:47"
+        }
+      ]
+    },
+    "failure": {
+      "retcode": "201",
+      "msg": "服务异常"
+    }
+  }
+}

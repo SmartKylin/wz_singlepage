@@ -1,0 +1,53 @@
+{
+  "path": "",
+  "delay": 500,
+  "name": "",
+  "description": "",
+  "isPaging": false,
+  "datasource": "success.data",
+  "responseName": "success",
+  "response": {
+    "success": {
+      "retcode": 2000000,
+      "msg": "查询拜访日志成功",
+      "data": [
+        {
+          "id":"10",
+          "content":"哈哈哈哈哈哈哈哈哈",
+          "channelCode":"csMtg5k42hKKe",
+          "staffCode":"666666",
+          "staffName":"郑麒麟",
+          "visitTime":"2017-07-01 10:10:00"
+        },
+        {
+          "id":"9",
+          "content":"哈哈哈哈哈哈哈哈哈",
+          "channelCode":"csMtg5k42hKKe",
+          "staffCode":"666666",
+          "staffName":"郑麒麟",
+          "visitTime":"2017-07-01 10:10:00"
+        },
+        {
+          "id":"8",
+          "content":"哈哈哈哈哈哈哈哈哈",
+          "channelCode":"csMtg5k42hKKe",
+          "staffCode":"666666",
+          "staffName":"郑麒麟",
+          "visitTime":"2017-07-01 10:10:00"
+        },
+        {
+          "id":"7",
+          "content":"哈哈哈哈哈哈哈哈哈",
+          "channelCode":"csMtg5k42hKKe",
+          "staffCode":"666666",
+          "staffName":"郑麒麟",
+          "visitTime":"2017-07-01 10:10:00"
+        }
+      ]
+    },
+    "failure": {
+      "retcode": "201",
+      "msg": "查询拜访日志失败"
+    }
+  }
+}

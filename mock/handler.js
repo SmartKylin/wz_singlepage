@@ -3,8 +3,8 @@ const utils = require('./utils')
 
 module.exports = (req, res, next) => {
   // get corresponding config for current request
-  
   console.log('handle');
+  
   try {
     var conf = utils.readJSON(__dirname + req.path + '.json')
   } catch (err) {
