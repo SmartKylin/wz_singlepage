@@ -4,6 +4,7 @@ const errorOverlayMiddleware = require('react-error-overlay/middleware');
 const noopServiceWorkerMiddleware = require('react-dev-utils/noopServiceWorkerMiddleware');
 const config = require('./webpack.config.dev');
 const paths = require('./paths');
+const myHandlerMiddleware = require('../mock/handler')
 
 const protocol = process.env.HTTPS === 'true' ? 'https' : 'http';
 const host = process.env.HOST || '0.0.0.0';
@@ -79,6 +80,7 @@ module.exports = function(proxy, allowedHost) {
     public: allowedHost,
     proxy,
     setup(app) {
+      app.all('*', myHandlerMiddleware)
       // This lets us open files from the runtime error overlay.
       app.use(errorOverlayMiddleware());
       // This service worker file is effectively a 'no-op' that will reset any
