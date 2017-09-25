@@ -33,6 +33,11 @@ input {
   font-size: 14px;
 }
 
+textarea {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
 /* Chrome/Opera/Safari */
 ::-webkit-input-placeholder {
   color: #ccc;
