@@ -10,6 +10,9 @@ const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
 const paths = require('./paths');
 const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
 
+const baseConfig = require('./webpack.config.base')
+const webpackMerge = require('webpack-merge')
+
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
 const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
@@ -49,7 +52,7 @@ const extractTextPluginOptions = shouldUseRelativeAssetPaths
 // This is the production configuration.
 // It compiles slowly and is focused on producing a fast and minimal bundle.
 // The development configuration is different and lives in a separate file.
-module.exports = {
+module.exports = webpackMerge({
   // Don't attempt to continue if there are any errors.
   bail: true,
   // We generate sourcemaps in production. This is slow but gives good results.
@@ -69,9 +72,9 @@ module.exports = {
     publicPath: publicPath,
     // Point sourcemap entries to original disk location (format as URL on Windows)
     devtoolModuleFilenameTemplate: info =>
-      path
-        .relative(paths.appSrc, info.absoluteResourcePath)
-        .replace(/\\/g, '/'),
+    path
+    .relative(paths.appSrc, info.absoluteResourcePath)
+    .replace(/\\/g, '/'),
   },
   resolve: {
     // This allows you to set a fallback for where Webpack should look for modules.
@@ -79,8 +82,8 @@ module.exports = {
     // if there are any conflicts. This matches Node resolution mechanism.
     // https://github.com/facebookincubator/create-react-app/issues/253
     modules: ['node_modules', paths.appNodeModules].concat(
-      // It is guaranteed to exist because we tweak it in `env.js`
-      process.env.NODE_PATH.split(path.delimiter).filter(Boolean)
+    // It is guaranteed to exist because we tweak it in `env.js`
+    process.env.NODE_PATH.split(path.delimiter).filter(Boolean)
     ),
     // These are the reasonable defaults supported by the Node ecosystem.
     // We also include JSX as a common.scss component filename extension to support
@@ -104,13 +107,13 @@ module.exports = {
       new ModuleScopePlugin(paths.appSrc),
     ],
   },
-  module: {
+  /* module: {
     strictExportPresence: true,
     rules: [
       // TODO: Disable require.ensure as it's not a standard language feature.
       // We are waiting for https://github.com/facebookincubator/create-react-app/issues/2176.
       // { parser: { requireEnsure: false } },
-
+      
       // First, run the linter.
       // It's important to do this before Babel processes the JS.
       {
@@ -132,7 +135,7 @@ module.exports = {
       // The `exclude` list *must* be updated with every change to loader extensions.
       // When adding a new loader, you must add its `test`
       // as a new entry in the `exclude` list in the "file" loader.
-
+      
       // "file" loader makes sure those assets end up in the `build` folder.
       // When you `import` an asset, you get its filename.
       {
@@ -186,49 +189,49 @@ module.exports = {
       {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract(
-          Object.assign(
+        Object.assign(
+        {
+          fallback: require.resolve('style-loader'),
+          use: [
             {
-              fallback: require.resolve('style-loader'),
-              use: [
-                {
-                  loader: require.resolve('css-loader'),
-                  options: {
-                    importLoaders: 1,
-                    minimize: true,
-                    sourceMap: true,
-                  },
-                },
-                {
-                  loader: require.resolve('postcss-loader'),
-                  options: {
-                    // Necessary for external CSS imports to work
-                    // https://github.com/facebookincubator/create-react-app/issues/2677
-                    ident: 'postcss',
-                    plugins: () => [
-                      require('postcss-flexbugs-fixes'),
-                      autoprefixer({
-                        browsers: [
-                          '>1%',
-                          'last 4 versions',
-                          'Firefox ESR',
-                          'not ie < 9', // React doesn't support IE8 anyway
-                        ],
-                        flexbox: 'no-2009',
-                      }),
-                    ],
-                  },
-                },
-              ],
+              loader: require.resolve('css-loader'),
+              options: {
+                importLoaders: 1,
+                minimize: true,
+                sourceMap: true,
+              },
             },
-            extractTextPluginOptions
-          )
+            {
+              loader: require.resolve('postcss-loader'),
+              options: {
+                // Necessary for external CSS imports to work
+                // https://github.com/facebookincubator/create-react-app/issues/2677
+                ident: 'postcss',
+                plugins: () => [
+                  require('postcss-flexbugs-fixes'),
+                  autoprefixer({
+                    browsers: [
+                      '>1%',
+                      'last 4 versions',
+                      'Firefox ESR',
+                      'not ie < 9', // React doesn't support IE8 anyway
+                    ],
+                    flexbox: 'no-2009',
+                  }),
+                ],
+              },
+            },
+          ],
+        },
+        extractTextPluginOptions
+        )
         ),
         // Note: this won't work without `new ExtractTextPlugin()` in `plugins`.
       },
       // ** STOP ** Are you adding a new loader?
       // Remember to add the new extension(s) to the "file" loader exclusion list.
     ],
-  },
+  },*/
   plugins: [
     // Makes some environment variables available in index.html.
     // The public URL is available as %PUBLIC_URL% in index.html, e.g.:
@@ -331,4 +334,4 @@ module.exports = {
     net: 'empty',
     tls: 'empty',
   },
-};
+}, baseConfig);
