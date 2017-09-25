@@ -4,7 +4,7 @@ import 'es6-promise'
 const formatUrlencoded = obj => {
   let arr = [];
   for(let key in obj) {
-    arr.push(`${key} = ${obj[key]}`);
+    arr.push(`${key}=${obj[key]}`);
   }
   return arr.join('&');
 };
