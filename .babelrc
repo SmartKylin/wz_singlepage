@@ -4,5 +4,4 @@
     "react"
   ],
   "plugins": ["babel-plugin-transform-decorators-legacy"],
-
 }
