@@ -44,4 +44,24 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script>
+    window.platformDetection = (function () {
+      var ua = navigator.userAgent;
+      var isIOS = /iPhone|iPad|iPod/i.test(ua);
+      var isAndroid = /(?:Android)/.test(ua);
+      var isFireFox = /(?:Firefox)/.test(ua);
+      var isTablet = /(?:iPad|PlayBook)/.test(ua) || (isFireFox && /(?:Tablet)/.test(ua));
+      var isMobile = /mobile/i.test(ua);
+    
+      return {
+        isDesktop: !isIOS && !isAndroid,
+        isTablet: isTablet,
+        isMobile: isMobile,
+        isIOS: isIOS,
+        isAndroid: isAndroid
+      };
+    })();
+  </script>
+  <script src="%PUBLIC_URL%/libs/jquery-3.1.0.min.js"></script>
+  <script src="%PUBLIC_URL%/libs/lodash.js"></script>
 </html>
