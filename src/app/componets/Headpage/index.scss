@@ -1,0 +1,63 @@
+.HeaderPageBoxBox{
+  position: relative;
+  .HeaderzPageBox{
+    width: 100%;
+    //height:100px;
+    background: url("../../images/大会bj.png") ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .HeaderPageBox-bg{
+      line-height: .42rem;
+      text-align: center;
+      width: 2.3rem;
+      height: .42rem;
+      background: url("../../images/分会场.png") no-repeat;
+      font-size: 17px;
+      font-weight: 800;
+      color: black;
+    }
+    .HeaderPageBox-bgA{
+      line-height: .42rem;
+      text-align: center;
+      width: 2.3rem;
+      height: .42rem;
+      background: url("../../images/分会场.png") no-repeat;
+      font-size: 13px;
+      font-weight: 800;
+      color: black;
+    }
+    .HeaderPageYXbox{
+      font-size:15px;
+      color: #fff;
+      font-weight: 600;
+      line-height: 10px;
+    }
+    .HeaderPageBoxDz{
+      color: #fff;
+      line-height: 40px;
+      font-size: 13px;
+    }
+
+    .header-down-btn {
+      width: 1rem;
+      height: .25rem;
+      font-size: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #28406e;
+      color: #fff;
+      border-radius: .125rem;
+      margin-bottom: 6px;
+    }
+  }
+  .HeaderzPageBoxXiang{
+    position: absolute;
+    right: 5px;
+    top: 40px;
+    color: #ffffff;
+    font-size: 14px;
+  }
+}
+

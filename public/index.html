@@ -22,10 +22,7 @@
     -->
     
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
-  
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_419360_2i4v1gyv4inhr529.css">
     <title>React App</title>
   </head>
   <body>
@@ -45,23 +42,13 @@
     -->
   </body>
   <script>
-    window.platformDetection = (function () {
-      var ua = navigator.userAgent;
-      var isIOS = /iPhone|iPad|iPod/i.test(ua);
-      var isAndroid = /(?:Android)/.test(ua);
-      var isFireFox = /(?:Firefox)/.test(ua);
-      var isTablet = /(?:iPad|PlayBook)/.test(ua) || (isFireFox && /(?:Tablet)/.test(ua));
-      var isMobile = /mobile/i.test(ua);
-    
-      return {
-        isDesktop: !isIOS && !isAndroid,
-        isTablet: isTablet,
-        isMobile: isMobile,
-        isIOS: isIOS,
-        isAndroid: isAndroid
-      };
-    })();
+    let desW = 375;
+    let computeFontSize = () => {
+      let winW = document.documentElement.clientWidth || document.body.clientWidth;
+      let ratio = winW / desW;
+      document.documentElement.style.fontSize = ratio * 100 + 'px';
+    }
+    computeFontSize()
   </script>
-  <script src="%PUBLIC_URL%/libs/jquery-3.1.0.min.js"></script>
-  <script src="%PUBLIC_URL%/libs/lodash.js"></script>
+
 </html>
