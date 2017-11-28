@@ -63,6 +63,7 @@ class SpeechItem extends Component {
             </div>
           </div>
         </div>
+        
         {speecher.file ? (
           <div className="item-right-down" onClick={this.preventBubble}>
             <a href={speecher.file}>
