@@ -2,7 +2,7 @@
   position: relative;
   .HeaderzPageBox{
     width: 100%;
-    //height:100px;
+    height:100px;
     background: url("../../images/大会bj.png") ;
     display: flex;
     flex-direction: column;
@@ -32,6 +32,7 @@
       color: #fff;
       font-weight: 600;
       line-height: 10px;
+      margin-bottom: 15px;
     }
     .HeaderPageBoxDz{
       color: #fff;

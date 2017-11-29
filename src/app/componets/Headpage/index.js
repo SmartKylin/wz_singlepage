@@ -21,13 +21,13 @@ export default class HeaderPage extends React.Component {
             {name}
           </div>
           <div className="HeaderPageYXbox">{enName}</div>
-          <div className="HeaderPageBoxDz">
+          {/*<div className="HeaderPageBoxDz">
             <i
               className="iconfont icon-positioning"
               style={{ color: '#30508e', marginRight: '3px', fontSize: '18px' }}
             />
             {addr}
-          </div>
+          </div>*/}
           <a className="header-down-btn" href={link}>
             <i className="iconfont icon-down"/>
             &nbsp;批量下载

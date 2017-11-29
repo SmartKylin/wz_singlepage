@@ -3,6 +3,8 @@ import Header from './componets/Headpage';
 import { getAgenda } from '../services/home';
 import './index.scss';
 import SpeechItem from '../component/SpeechItem';
+import BannerImg from '../images/banner.png';
+
 
 import Sike from '../images/sike.jpg';
 
@@ -43,6 +45,9 @@ export default class Schedule extends React.Component {
     // console.log(agendaData, 'shefjdls');
     return (
       <div className="ScheduleBox">
+        <div className="banner-wrapper">
+          <img src={BannerImg} alt="" />
+        </div>
         {agendaData.length
           ? agendaData.map((agenda, index) => (
               <div key={index}>
